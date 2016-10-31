@@ -45,12 +45,12 @@ public class Assignment3 {
 		 total = mark1 + mark2 + mark3 + mark4 + mark5;
 		 avarage = total /5;
 		 
-		 System.out.println("Class one: " +mark1);
-		 System.out.println("Class two: " +mark2);
-		 System.out.println("Class three: " +mark3);
-		 System.out.println("Class four: " +mark4);
-		 System.out.println("Class five: " +mark5);
-		 System.out.println("Your avarage is: " +avarage+"%");
+		 System.out.println( String.format("%-20s " +mark1,"Class one:"));
+		 System.out.println( String.format("%-20s " +mark2,"Class two:"));
+		 System.out.println( String.format("%-20s " +mark3,"Class three:"));
+		 System.out.println( String.format("%-20s " +mark4,"Class four:"));
+		 System.out.println( String.format("%-20s " +mark5,"Class five:"));
+		 System.out.println( String.format("%-20s " +avarage,"Your average is:"));
 		 
 		 userInput.close();
 		
