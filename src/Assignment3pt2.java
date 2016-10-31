@@ -4,7 +4,7 @@ import java.util.Scanner;
  *  Amanda Schepp
  * Mr.Hardman
  * Assignment 3 program 2
- * October 27
+ * October 31
  */
 public class Assignment3pt2 {
 			
@@ -44,13 +44,13 @@ public class Assignment3pt2 {
 				
 				
 		System.out.println("Your information");
-		System.out.println( String.format("Login:  " + log));
-		System.out.println( String.format("Student ID: " + StudID));
-		System.out.println( String.format("Name: " +lName+", " +fName));
-		System.out.println( String.format("Average:" + average));
-		System.out.println( String.format("Grade:" +grade));
-																
-					
+		System.out.println( String.format("%-15s " + log, "Log-in:"));
+		System.out.println( String.format("%-15s " + StudID, "Student ID:"));
+		System.out.println( String.format("%-15s "+ lName +","+ fName, "Name:"));
+		System.out.println( String.format("%-15s "+ average, "Average:"));
+		System.out.println( String.format("%-15s "+ grade, "Grade:"));
+				
+				
 		userInput.close();
 				
 	}
